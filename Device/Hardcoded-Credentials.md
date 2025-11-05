@@ -12,5 +12,6 @@ The Meatmeet Pro was found to be shipped with hardcoded Wi-Fi credentials in the
 5. On the extracted NVS partition run: `strings nvs_out.bin | grep "maxeye"`
 
 **Results**
+
 The Wi-Fi password for the test network used by the vendor are returned in cleartext.. 
 
