@@ -13,5 +13,5 @@ The Meatmeet Pro was found to be shipped with hardcoded Wi-Fi credentials in the
 
 **Results**
 
-The Wi-Fi password for the test network used by the vendor are returned in cleartext.. 
+The Wi-Fi password for the test network used by the vendor are returned in cleartext.
 
