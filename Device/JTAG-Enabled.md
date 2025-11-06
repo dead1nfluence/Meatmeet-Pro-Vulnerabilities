@@ -11,6 +11,7 @@ The ESP32 system on a chip (SoC) that powers the Meatmeet Pro was found to have 
 
 ### Replication Steps
 1. Disassemble the Meatmeet Pro, exposing its internal circuit board.
-2. Using probes and a USB-UART adapter, connect to the device over UART and force the device into [download mode by pulling IO9 low](https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html).
-3. Using [espefuse](https://docs.espressif.com/projects/esptool/en/latest/esp32/espefuse/index.html) run: `espefuse dump`
-4. Observe that JTAG is still enabled on the device.
+2. Using probes and a USB-UART adapter, connect to the device over UART.
+3. Put the device into [download mode by pulling IO9 low](https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html).
+4. Using [espefuse](https://docs.espressif.com/projects/esptool/en/latest/esp32/espefuse/index.html) run: `espefuse dump`
+5. Observe that JTAG is still enabled on the device.
