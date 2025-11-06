@@ -3,7 +3,7 @@
 
 
 ### Impact
-The ESP32 system on a chip (SoC) that powers the device was found to have JTAG enabled. By leaving JTAG enabled on an ESP32 in a commercial product an attacker with physical access to the device can connect over this port and reflash the devices firmware with malicious code which will be executed upon running. 
+The ESP32 system on a chip (SoC) that powers the device was found to have JTAG enabled. By leaving JTAG enabled on an ESP32 in a commercial product an attacker with physical access to the device can connect over this port and reflash the device's firmware with malicious code which will be executed upon running. As a result, the victim will lose access to the functionality of their device and the attack may gain unauthorized access to the victim's Wi-Fi network by re-connecting to the SSID defined in the NVS partition of the device.
 
 ### Replication Steps
 1. Disassemble the Meatmeet Pro, exposing its internal circuit board.
