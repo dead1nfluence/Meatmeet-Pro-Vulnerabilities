@@ -13,4 +13,4 @@ The ESP32 system on a chip (SoC) that powers the Meatmeet basestation device was
 2. Using probes and a USB-UART adapter, connect to the device over UART.
 3. Put the device into [download mode by pulling IO9 low](https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html).
 4. Using [espefuse](https://docs.espressif.com/projects/esptool/en/latest/esp32/espefuse/index.html) run: `espefuse dump`
-5. Observe that Secure Boot is set to enabled on the device.
+5. Observe that Secure Boot is set to disabled on the device.
