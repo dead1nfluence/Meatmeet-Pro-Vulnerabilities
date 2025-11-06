@@ -2,8 +2,12 @@
 - Meatmeet Pro BBQ Thermometer v1.0.34.4
 
 ### Impact
-An unauthenticated attacker within proximity of the Meatmeet device can issue several commands to these devices which would result in a Denial of Service. These commands include: shutdown, restart, clear config. Clear config would disassociate the current device from its user and would require re-configuration to re-enable the device. 
+An unauthenticated attacker within proximity of the Meatmeet device can issue several commands over Bluetooth Low Energy (BLE) to these devices which would result in a Denial of Service. These commands include: shutdown, restart, clear config. Clear config would disassociate the current device from its user and would require re-configuration to re-enable the device. 
 As a result, the end user would be unable to receive updates from the Meatmeet base station which communicates with the cloud services until the device had been fixed or turned back on.  
+
+### References 
+- CWE-306: Missing Authentication for Critical Function
+
 
 ### Replication Steps
 1. Save the MeatConnect Python script locally
