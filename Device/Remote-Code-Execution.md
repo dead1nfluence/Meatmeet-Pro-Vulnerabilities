@@ -2,7 +2,12 @@
 - Meatmeet Pro BBQ Thermometer v1.0.34.4
 
 ### Impact 
-An unauthenticated attacker within proximity of the Meatmeet device can perform an unauthorized Over The Air (OTA) firmware upgrade, resulting in the firmware on the device being overwritten with the attacker's code. As the device does not perform checks on upgrades, this results in Remote Code Execution (RCE) and the victim losing complete access to the Meatmeet.
+An unauthenticated attacker within proximity of the Meatmeet device can perform an unauthorized Over The Air (OTA) firmware upgrade using Bluetooth Low Energy (BLE), resulting in the firmware on the device being overwritten with the attacker's code. As the device does not perform checks on upgrades, this results in Remote Code Execution (RCE) and the victim losing complete access to the Meatmeet.
+
+### References 
+- CWE-306: Missing Authentication for Critical Function
+- CWE-494: Download of Code Without Integrity Check
+- CWE-345: Insufficient Verification of Data Authenticity
 
 
 ### Replication Steps
