@@ -13,6 +13,6 @@ As UART download mode is still enabled on the ESP32 chip on which the firmware r
 1. Disassemble the Meatmeet Pro, exposing its internal circuit board.
 2. Using probes and a USB-UART adapter, connect to the Meatmeet.
 4. Connect to the device over UART with picocom, where * is the number associated with your USB-UART adapter: `sudo picocom /dev/ttyUSB* -b 115200`
-5. Force the device into download mode by pulling IO9 low.
+5. Put the device into [download mode by pulling IO9 low](https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html).
 6. The UART log will now display that the device is in download mode.
 
