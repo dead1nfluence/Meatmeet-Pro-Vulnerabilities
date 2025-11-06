@@ -3,7 +3,9 @@
 
 
 ### Impact
-The ESP32 system on a chip (SoC) that powers the Meatmeet basestation device was found to lack Secure Boot. As a result, an attacker with physical access to the device can flash modified firmware to the device, resulting in the execution of malicious code upon startup. 
+The ESP32 system on a chip (SoC) that powers the Meatmeet basestation device was found to lack Secure Boot. The Secure Boot feature ensures that only authenticated software can execute on the device. The Secure Boot process forms a chain of trust by verifying all **mutable** software entities involved in the [Application Startup Flow](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/startup.html). 
+
+As a result, an attacker with physical access to the device can flash modified firmware to the device, resulting in the execution of malicious code upon startup. 
 
 ### References 
 - CWE-693: Protection Mechanism Failure
