@@ -6,7 +6,7 @@ The Meatmeet Pro was found to be shipped with hardcoded Wi-Fi credentials in the
 
 ### Replication Steps
 1. Disassemble the Meatmeet Pro, exposing its internal circuit board.
-2. Using probes, connect to the device over UART and force the device into [download mode by pulling IO9 low](https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html).
+2. Using probes and a USB-UART adapter, connect to the device over UART and force the device into [download mode by pulling IO9 low](https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html).
 3. Dump the flash by running the following command in a terminal: `esptool -p /dev/ttyUSB0 -b 460800 read-flash 0 ALL flashed.bin`
 4. Extract the NVS partition from the flash dump: `./esp32knife.py --chip esp32c3 load_from_file flash.bin`
 5. On the extracted NVS partition run: `strings nvs_out.bin | grep "maxeye"`
