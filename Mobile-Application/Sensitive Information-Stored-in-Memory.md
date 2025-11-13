@@ -1,0 +1,8 @@
+### Affected Entity
+- Meatmeet Pro Mobile Application v1.1.2.0 
+
+### Impact
+The mobile application insecurely handles information stored within memory. By performing a memory dump on the application after a user has logged out and terminated it, Wi-Fi credentials sent during the pairing process, JWTs used for authentication, and other sensitive details can be retrieved. As a result, an attacker with physical access to the device of a victim can retrieve this information and gain unauthorized access to their home Wi-Fi network and Meatmeet account.
+
+### References
+-  CWE-316: Cleartext Storage of Sensitive Information in Memory 
